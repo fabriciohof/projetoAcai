@@ -1,0 +1,33 @@
+@media (min-width: 320px) and (max-width: 768px) {
+    .açai-container {
+        display: block;   
+    }
+
+    .açai-item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .date-actual {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+
+    .açai-types h1 {
+        font-size: 40px;
+    }
+
+    .açai-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+      }
+
+      .date-actual {
+        width: 40%;
+    }
+
+}
+

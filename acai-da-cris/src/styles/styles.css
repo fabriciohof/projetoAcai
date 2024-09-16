@@ -1,0 +1,303 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eacaef;
+    overflow-x: hidden; 
+    
+  }
+
+ /* Estilo para a página Home */
+
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.home h1 {
+  text-align: center;
+  color: palevioletred;
+}
+
+.date-actual {
+  display: block;
+  margin: 0 auto;
+  background-color: #16a34a; 
+  width: 15%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; 
+  border-radius: 0.8rem; 
+  margin-top: 1rem; 
+}
+
+.date-actual.closed {
+  background-color: #dc2626; /* (fechado) */
+}
+
+.date-actual span {
+  font-size: 17px;
+  color: white; 
+  font-weight: 500; 
+}
+
+
+.container-home {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 63%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.açai-types {
+  margin-top: 20px;
+}
+
+.açai-types h1 {
+  font-size: 60px;
+}
+
+.açai-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.açai-item {
+  flex: 1 1 calc(25% - 20px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.açai-item h3 {
+  margin-bottom: 10px;
+}
+
+.açai-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.açai-item p {
+  margin: 0; /* Remover margem padrão do parágrafo para garantir que o layout fique consistente */
+}
+
+
+/* Estilo para Header */
+
+  .header {
+    background-color: rgba(128, 0, 128, 0.724);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .header nav a {
+    font-weight: 500;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .header nav a:hover{
+    font-weight: 600;
+    cursor: pointer;
+    color: green;
+  }
+ 
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .product-card button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+/* Estilo para a página Order */
+.order {
+  padding: 20px;
+  text-align: center;
+}
+
+.order select {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.order-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.order-complements,
+.order-toppings {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-complements h3,
+.order-toppings h3 {
+  margin-bottom: 10px;
+}
+
+.order-complements label,
+.order-toppings label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.order-complements input[type="checkbox"],
+.order-toppings input[type="checkbox"] {
+  margin-right: 10px; 
+}
+
+.order-buttons {
+  margin-top: 20px;
+}
+
+.order-button {
+  background-color: #28a745; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.order-button:hover {
+  background-color: #218838;
+}
+
+  
+  /* Tabela de Preços */
+  .prices-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+  }
+  
+  .prices-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .prices-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .prices-table th, .prices-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .prices-table th {
+    background-color: #df61f2;
+    color: white;
+  }
+  
+  .prices-table td {
+    color: var(--text-color);
+  }
+  
+  .prices-table tr:hover {
+    background-color: #df61f2;
+  }
+
+  .additional-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; 
+  }
+  
+  .additional-info h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+
+  footer {
+    
+  background-color: rgba(0, 0, 0, 0.926); 
+  color: white;
+  padding: 20px; 
+  text-align: center; 
+  position: relative; 
+  margin-top: auto; 
+  
+}
+
+
+.no-footer footer {
+  display: none;
+}
+
+
