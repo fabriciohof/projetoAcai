@@ -2,9 +2,9 @@ import React from 'react';
 import ProductCard from './ProductCard';
 
 const products = [
-  { id: 1, name: 'Açaí com Frutas', price: 'R$ 15,00' },
-  { id: 2, name: 'Açaí com Granola', price: 'R$ 18,00' },
-  { id: 3, name: 'Açaí com Leite Condensado', price: 'R$ 20,00' },
+  { id: 1, name: 'Açaí com Frutas', price: 'R$ 10,00' },
+  { id: 2, name: 'Açaí com Granola', price: 'R$ 14,00' },
+  { id: 3, name: 'Açaí com Leite Condensado', price: 'R$ 18,00' },
 ];
 
 function ProductList() {

@@ -17,20 +17,17 @@ function Prices() {
         <tbody>
           <tr>
             <td>300ml</td>
-            <td>R$ 12,00</td>
+            <td>R$ 10,00</td>
           </tr>
           <tr>
             <td>500ml</td>
-            <td>R$ 15,00</td>
+            <td>R$ 14,00</td>
           </tr>
           <tr>
             <td>700ml</td>
             <td>R$ 18,00</td>
           </tr>
-          <tr>
-            <td>1L</td>
-            <td>R$ 25,00</td>
-          </tr>
+          
         </tbody>
       </table> 
       

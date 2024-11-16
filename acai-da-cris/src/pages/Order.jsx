@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-
 const complements = [
   'Granola',
-  'Amendoim',
+  'Paçoca',
   'Granulado colorido',
   'Leite em Pó',
-  'Paçoca'
+  'Jujuba',
+  'Flocos de Arroz'
 ];
 
 const toppings = [
@@ -14,14 +14,13 @@ const toppings = [
   'Morango',
   'Caramelo',
   'Blue Ice',
-  'Limão',
-  'Uva'
 ];
 
 function Order() {
   const [selectedComplements, setSelectedComplements] = useState([]);
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState('Açaí Tradicional');
+  const [selectedSize, setSelectedSize] = useState('300ml');
 
   const handleComplementChange = (event) => {
     const value = event.target.value;
@@ -44,11 +43,12 @@ function Order() {
   const handleOrder = () => {
     const complementText = selectedComplements.join(', ');
     const toppingText = selectedToppings.join(', ');
-    const whatsappMessage = `Olá, gostaria de pedir um ${selectedProduct} com os seguintes complementos: ${complementText} e cobertura de: ${toppingText}.`;
-    const whatsappLink = `https://wa.me/+5521984063033?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappMessage = `Olá, gostaria de pedir um ${selectedProduct} \nTamanho: ${selectedSize}.\nComplemento: ${complementText}\nCobertura: ${toppingText}.`;
+    const whatsappLink = `https://wa.me/+5521988719326?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappLink, '_blank');
   };
-
+  
+  
 
   return (
     <div className="order">
@@ -61,10 +61,19 @@ function Order() {
             onChange={(e) => setSelectedProduct(e.target.value)}
           >
             <option>Açaí Tradicional</option>
-            <option>Açaí com Banana</option>
-            <option>Açaí com Morango</option>
-            <option>Açaí com Oreo</option>
-
+            <option>Açaí de Banana</option>
+            <option>Açaí de Kinder</option>
+          </select>
+        </div>
+        <div className="order-section">
+          <h3>Escolha o Tamanho do Copo:</h3>
+          <select
+            value={selectedSize}
+            onChange={(e) => setSelectedSize(e.target.value)}
+          >
+            <option>300 ml</option>
+            <option>500 ml</option>
+            <option>700 ml</option>
           </select>
         </div>
         <div className="order-options">
