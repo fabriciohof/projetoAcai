@@ -16,6 +16,7 @@ const toppings = [
   'Morango',
   'Caramelo',
   'Blue Ice'
+  
 ];
 
 function Order() {
