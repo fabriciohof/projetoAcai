@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import acaiTradicional from '../assets/acainormal.png'; 
 import acaiBanana from '../assets/acaibanana.png'; 
 import acaiOreo from '../assets/acaioreo.png'; 
@@ -6,6 +7,8 @@ import logo from '../assets/logo.png';
 
 
 function Home() {
+  const navigate = useNavigate(); // Hook para navegação
+  
   return (
     <div className="home">
       <div className="logo-container">
@@ -16,15 +19,24 @@ function Home() {
         <h3>Pronto para experimentar o melhor açaí do bairro?</h3>
          <h4>Peça agora e descubra por que nossos clientes estão sempre voltando para mais.
           <br></br> Deixe o Açaí da Cris transformar seu dia com um toque de frescor e sabor.</h4>
+
+          <button
+        className="order-button"
+        onClick={() => navigate('/order')}
+      >
+        Fazer Pedido
+      </button>
       </div>
+
 
       <section className='hours'>
       <h2>Horário de funcionamento</h2>
       <div class="date-actual" id='date-actual'>
       <span>Terça a Domingo: 14h às 20h</span>
      </div>
-
       </section>
+
+
       <section className="açai-types">
         <h1>Nossos Tipos de Açaí</h1>
         <div className="açai-container">

@@ -32,6 +32,22 @@ body {
 }
 
 
+.order-button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #4500b5;
+}
+
+
 .date-actual {
   display: block;
   margin: 0 auto;
@@ -109,7 +125,7 @@ body {
 }
 
 .açai-item p {
-  margin: 0; /* Remover margem padrão do parágrafo para garantir que o layout fique consistente */
+  margin: 0; 
 }
 
 
@@ -174,10 +190,11 @@ body {
   margin-bottom: 30px;
 }
 
+
 .order-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

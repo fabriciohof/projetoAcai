@@ -3,10 +3,13 @@ import React, { useState } from 'react';
 const complements = [
   'Granola',
   'Paçoca',
+  'Amendoim',
   'Granulado colorido',
   'Leite em Pó',
   'Jujuba',
+  'Confete',
   'Flocos de Arroz'
+  
 ];
 
 const toppings = [
@@ -21,6 +24,7 @@ function Order() {
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState('Açaí Tradicional');
   const [selectedSize, setSelectedSize] = useState('300ml');
+  const [selectedFilling, setSelectedFilling] = useState('Meio-a-Meio');
 
   const handleComplementChange = (event) => {
     const value = event.target.value;
@@ -43,7 +47,7 @@ function Order() {
   const handleOrder = () => {
     const complementText = selectedComplements.join(', ');
     const toppingText = selectedToppings.join(', ');
-    const whatsappMessage = `Olá, gostaria de pedir um ${selectedProduct} \nTamanho: ${selectedSize}.\nComplemento: ${complementText}\nCobertura: ${toppingText}.`;
+    const whatsappMessage = `Olá, gostaria de pedir um ${selectedProduct} \nTamanho: ${selectedSize}\nComplemento: ${complementText}\nCobertura: ${toppingText}\nRecheio: ${SelectedFilling} `;
     const whatsappLink = `https://wa.me/+5521988719326?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappLink, '_blank');
   };
@@ -74,6 +78,18 @@ function Order() {
             <option>300 ml</option>
             <option>500 ml</option>
             <option>700 ml</option>
+          </select>
+        </div>
+        <div className="order-section">
+          <h3>Recheios e coberturas</h3>
+          <select
+            value={selectedFilling}
+            onChange={(e) => setSelectedFilling(e.target.value)}
+          >
+            <option>Só em cima</option>
+            <option>Meio-a-Meio</option>
+            <option>Sem recheio</option>
+            
           </select>
         </div>
         <div className="order-options">
