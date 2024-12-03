@@ -9,7 +9,6 @@ const complements = [
   'Jujuba',
   'Confete',
   'Flocos de Arroz'
-  
 ];
 
 const toppings = [
